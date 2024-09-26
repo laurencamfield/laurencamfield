@@ -1,0 +1,10 @@
+```mermaid
+sequenceDiagram
+participant Attacker
+participant BotNet
+participant WebServer
+participant Firewall
+Attacker-->BotNet: Attacker compromises device infecting the server with botnets. Attacket then establishes remote commands of attacks for the botnets to preform within the specific destination.
+BotNet-->WebServer: Botnet compromises webserver with traffic flooding causing the web server to become overwelmed.
+Webserver-->Firewall: Firewall fiters and controlls traffic between trusted and melicious traffic. Firewalls can also block knowns IP addresses that are sources of DDoS attacks preventing any unwanted activity.
+A device can be compromised by an attacker using vulnerabilities, leading to an infection of botnets within the server. Control and command (C&C) servers can be used by an attacker remotely to send commands to botnets, causing a launch of attacks to a specific target within the device that's infected. Through these attacks, personal information such as finances, network information, and other valuable information can be obtained by the attacker. The web server then becomes overwhelmed with the botnet flooding the server with traffic, resulting in server disruptions such as slowdowns and complete shutdowns for the original user. Incoming traffic is monitored by firewalls, which either allow or block traffic based on various parameters. DDoS attacks Additionally, firewalls can filter out malicious requests seen in DDoS attacks and restrict/redirect the number of attacks originating from a single IP address in an attempt to overwhelm the system.
